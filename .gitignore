@@ -396,3 +396,6 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+# keep dev pfx
+!ExcelAddin/ExcelAddin_TemporaryKey.pfx

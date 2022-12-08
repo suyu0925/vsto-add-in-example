@@ -24,7 +24,10 @@ namespace ExcelAddIn
             var env = await CoreWebView2Environment.CreateAsync(null, Config.UserDataFolder);
             await webView.EnsureCoreWebView2Async(env);
 
-            webView.Source = new Uri("https://bing.com");
+            webView.CoreWebView2.SetVirtualHostNameToFolderMapping("appassets.example", "Assets", 
+                CoreWebView2HostResourceAccessKind.Allow);
+
+            webView.Source = new Uri("http://appassets.example/index.html");
         }        
     }
 }
