@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui" onLoad="Ribbon_Load">
+  <ribbon>
+    <tabs>
+      <tab id="ExcelAddInTab" label="ExcelAddIn">
+        <group id="userGroup" label="User">
+          <button id="loginButton" label="Login" imageMso="HappyFace" onAction="OnLogin" size="large" getVisible="IsControlVisible"/>
+        </group>
+      </tab>
+    </tabs>
+  </ribbon>
+</customUI>
+
