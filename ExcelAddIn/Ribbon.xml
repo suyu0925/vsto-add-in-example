@@ -6,6 +6,11 @@
         <group id="userGroup" label="User">
           <button id="loginButton" label="Login" imageMso="HappyFace" onAction="OnLogin" size="large" getVisible="IsControlVisible"/>
         </group>
+        <group id="testGroup" label="Test">
+          <button id="nonblockTaskButton" label="nonblock task" imageMso="SignaturesLoading" size="large" onAction="OnNonblockTask"/>
+          <button id="throwErrorButton" label="throw error" imageMso="TraceError" size="large" onAction="OnThrowError"/>
+          <button id="blockTaskButton" label="block task" imageMso="ScriptDebugger" size="large" onAction="OnBlockTask"/>
+        </group>
       </tab>
     </tabs>
   </ribbon>

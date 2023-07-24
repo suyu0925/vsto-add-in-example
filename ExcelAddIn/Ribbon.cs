@@ -45,6 +45,24 @@ namespace ExcelAddIn
             }
         }
 
+        public void OnThrowError(Office.IRibbonControl control)
+        {
+            var dlg = new TestForm(TestForm.FormType.ThrowError);
+            dlg.ShowDialog();
+        }
+
+        public void OnNonblockTask(Office.IRibbonControl control)
+        {
+            var dlg = new TestForm(TestForm.FormType.NonblockTask);
+            dlg.ShowDialog();
+        }
+
+        public void OnBlockTask(Office.IRibbonControl control)
+        {
+            var dlg = new TestForm(TestForm.FormType.BlockTask);
+            dlg.ShowDialog();
+        }
+
         public bool IsControlVisible(Office.IRibbonControl control)
         {
             return true;
