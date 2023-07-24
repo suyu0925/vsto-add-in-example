@@ -6,6 +6,12 @@
         <group id="userGroup" label="User">
           <button id="loginButton" label="Login" imageMso="HappyFace" onAction="OnLogin" size="large" getVisible="IsControlVisible"/>
         </group>
+        <group id="funcGroup" label="功能">
+          <button id="deplayDoButton" label="延时任务" imageMso="ShapeUpArrow" size="large" onAction="OnDelayDo"/>
+          <button id="doButton" label="重任务" imageMso="ShapeUpArrow" size="large" onAction="OnDoSomething"/>
+          <button id="doOnThreadButton" label="线程重任务" imageMso="ShapeUpArrow" size="large" onAction="OnDoSomethingOnThread"/>
+          <button id="helpButton" label="帮助" imageMso="ShapeUpArrow" size="large" onAction="OnHelp"/>
+        </group>
       </tab>
     </tabs>
   </ribbon>
